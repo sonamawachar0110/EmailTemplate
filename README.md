@@ -1,1 +1,1 @@
-# EmailTemplate
+# KafkaConnect
