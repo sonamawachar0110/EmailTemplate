@@ -15,7 +15,8 @@ docker-compose -f load-csv-kafka.yml up
 ```
 
 ### Create connector
-```curl -i -X PUT -H "Accept:application/json" \
+```
+curl -i -X PUT -H "Accept:application/json" \
     -H  "Content-Type:application/json" http://localhost:8083/connectors/source-csv-spooldir-00/config \
     -d '{
         "connector.class": "com.github.jcustenborder.kafka.connect.spooldir.SpoolDirCsvSourceConnector",
